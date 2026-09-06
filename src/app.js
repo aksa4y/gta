@@ -2,6 +2,12 @@ const menu = document.querySelector('[data-menu]');
 const modal = document.querySelector('[data-modal]');
 const result = document.querySelector('[data-launch-result]');
 
+const tauriWindow = window.__TAURI__?.window;
+const appWindow = tauriWindow?.getCurrentWindow?.();
+
+document.getElementById('titlebar-minimize')?.addEventListener('click', () => appWindow?.minimize());
+document.getElementById('titlebar-close')?.addEventListener('click', () => appWindow?.close());
+
 for (const button of document.querySelectorAll('[data-action]')) {
   button.addEventListener('click', () => {
     const action = button.dataset.action;
