@@ -1,0 +1,16 @@
+[package]
+name = "gta-launcher"
+version = "0.1.0"
+description = "GTA Launcher"
+authors = ["aksa4y"]
+edition = "2021"
+
+[lib]
+name = "gta_launcher_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.5.0" }
+
+[dependencies]
+tauri = { version = "2.11.0" }
