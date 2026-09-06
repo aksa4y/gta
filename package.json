@@ -1,14 +1,9 @@
 {
-  "name": "gta-launcher",
-  "version": "0.1.0",
-  "private": true,
-  "description": "Tauri launcher prototype inspired by the provided visual reference.",
-  "scripts": {
-    "dev": "tauri dev",
-    "build": "tauri build",
-    "tauri": "tauri"
-  },
-  "devDependencies": {
-    "@tauri-apps/cli": "2.11.0"
-  }
+  "name":"gta-launcher",
+  "version":"0.1.0",
+  "private":true,
+  "description":"Cinematic GTA desktop launcher built with Tauri 2.",
+  "scripts":{"dev":"tauri dev","build":"tauri build","tauri":"tauri"},
+  "dependencies":{"@tauri-apps/api":"2.11.0"},
+  "devDependencies":{"@tauri-apps/cli":"2.11.0"}
 }
