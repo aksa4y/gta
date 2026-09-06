@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#020402" />
+    <title>GTA Launcher</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="launcher" data-tauri-drag-region>
+      <div class="reference" aria-hidden="true"></div>
+      <div class="screen-noise" aria-hidden="true"></div>
+      <div class="hotspot-layer">
+        <button class="hotspot hamburger" aria-label="Open launcher menu" data-action="menu">
+          <span></span><span></span><span></span>
+        </button>
+        <button class="hotspot contact" data-action="contact">CONTACT</button>
+        <button class="hotspot discover" data-action="discover">DISCOVER</button>
+      </div>
+      <div class="menu-panel" data-menu>
+        <button class="panel-close" data-action="menu">×</button>
+        <div class="panel-kicker">GTA // LAUNCHER</div>
+        <div class="panel-title">SYSTEM READY</div>
+        <div class="panel-status"><span class="status-dot"></span> LOCAL CLIENT</div>
+        <div class="panel-copy">Visual shell is ready. Game/update services can be wired into this launcher later.</div>
+      </div>
+      <div class="discover-modal" data-modal>
+        <div class="modal-card">
+          <button class="panel-close" data-action="discover" aria-label="Close">×</button>
+          <div class="panel-kicker">DISCOVER</div>
+          <div class="panel-title">ENTER THE WORLD</div>
+          <p>Launcher UI is installed and centered. The next layer can connect this screen to your GTA client, patcher and server selector.</p>
+          <button class="modal-cta" data-action="launch">LAUNCH CLIENT</button>
+          <div class="launch-result" data-launch-result>CLIENT STANDBY</div>
+        </div>
+      </div>
+      <div class="cursor-ring" aria-hidden="true"></div>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
